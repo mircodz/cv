@@ -1,0 +1,170 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage[pdftex,hidelinks]{hyperref}
+
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{filemod}
+\usepackage{newpxmath}
+\usepackage{xcolor}
+\usepackage{newpxtext}
+\usepackage{titlesec}
+\usepackage{verbatim}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}
+  \item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1}       & \textsc{#2}         \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListEntry}[1]{\item{#1}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+\newcommand\maintitle[3]{\vbox to 0pt{\hfill\scriptsize\color{gray} #3}\vspace{-0.4em}\noindent{\LARGE \textbf{#1}}\ \ \ \emph{#2}}
+
+\begin{document}
+
+\maintitle{Mirco De Zorzi}{April 4, 2002}{Last update on \today}
+
+\vspace{0.1em}
+
+\href{mailto:mircodezorzi@protonmail.com}{\texttt{mircodezorzi@protonmail.com}}
+  $\bullet$ {\small+}39 331 9174 467
+  $\bullet$ Github: \href{https://github.com/mircodezorzi}{Mirco De Zorzi}
+  $\bullet$ Vivaro, Pordenone, Italy
+
+\vspace{1em}
+
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {I.T.I.S J.F.Kennedy}{Pordenone, IT}
+      {Diploma in Information Technologies}{2016 - present}
+  \resumeSubHeadingListEnd
+
+\shorterSection{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Assembly (x86 and Cortex ARM), C, C++, Go, Lua, Python, PHP, Javascript, Elisp}
+    \resumeSubItem{Other Tools}{Emacs, R.O.S., MongoDB, Prometheus, SQL}
+    \resumeSubItem{Administrative Tools}{AWS, Git, Ansible, Docker, Linux, BSD}
+    \resumeSubItem{Natural Languages}{: Italian (native), English (proficient), Slovakian (second language)}
+
+\resumeSubHeadingListEnd
+
+\shorterSection{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Technological Systems by Moro}{Azzano Decimo, Italy}
+      {Reverse Engineering and Software Development}{June 2019 - August 2019}
+      \resumeItemListStart
+        \resumeItem{Reverse Engineering}
+          {Reverse Engineered stripped firmware for an STM32 microprocessor.}
+        \resumeItem{Development}
+          {Developed software components for \textit{simultaneous localization
+          and mapping} and \textit{automated guided vehicles} on the R.O.S.
+          operating system. The backend is written in C++ while the frontend in
+          JavaScript.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Advanced Algorithms Summer School}{Ca' Foscari University, Italy}
+      {Course}{July 2019}
+
+      Attended a week-long \textit{advanced algorithms} course at San Servolo
+      International College for students qualified at the 2019 National
+      Olympiad of Informatics. The topics ranged from dynamic programming to
+      greedy algorithms and graphs.
+
+    \resumeSubheading
+      {Cyber Challenge 2019}{University of Padua and Pisa, Italy}
+      {Course}{February 2019 - June 2019}
+
+      Qualified at a national programming challenge organized by the C.I.N.I.
+      at the University of Pisa and subsequently attended a 3 months long
+      cybersecurity course at the University of Padua with topics such as:
+      reverse engineering, pwning, web security, and cryptography. At the end
+      of this course participated at a jeopardy CTF hosted by the organizers of
+      the course.
+
+  \resumeSubHeadingListEnd
+
+\shorterSection{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{hort (\texttt{github.com/hort})}{Data mining and indexing framework written in modern C++.}
+    \resumeSubItem{loki-cpp (\texttt{github.com/mircodezorzi/loki-cpp})}{Modern C++ driver for Loki: a log aggregation system.}
+    \resumeSubItem{sym}{Process scheduling and memory management tui simulator
+    written in pure C without the use of any third-party libraries.}
+    \resumeSubItem{F.N.N.}{Food classification web-service written in Python using
+    Keras and Tensorflow.}
+    \resumeSubItem{D.C.F.}{Android application for personal daily carbon footprint
+    tracking written in Java with a PHP + SQL backend.}
+  \resumeSubHeadingListEnd
+
+\shorterSection{Certifications}
+  \resumeSubHeadingListStart
+    \small
+    \resumeSubHeadingListEntry{Cisco \textit{IT Essentials}, Cisco
+    \textit{Introduction to Networks}, and Cisco \textit{Cybersecurity Essentials}}
+  \resumeSubHeadingListEnd
+
+\shorterSection{Additional Experience \& Achievements}
+  \resumeSubHeadingListStart
+    \small
+    \resumeSubHeadingListEntry{Won the M.I.U.R. prize at the National Robotic
+    Olympics in Genua with a remotely operated drone for environmental data
+    analysis.}
+    \resumeSubHeadingListEntry{Participated at a series of international open
+    CTFs such as FaustCTF, CincestCTF, and TyumenCTF under the NoPwnIntended
+    team.}
+    \resumeSubHeadingListEntry{Participated at 3 national Rubik's cube
+    competitions in Milan, Verona (IT) and Bratislava (SK) with a personal best
+    of 18.67 seconds.}
+  \resumeSubHeadingListEnd
+
+\end{document}
