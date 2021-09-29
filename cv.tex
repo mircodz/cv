@@ -47,11 +47,10 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{3pt}
   \item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1}       & \textsc{#2}         \\
     \textit{\small#3} & \textit{\small #4}  \\
-  \end{tabular*}\vspace{3pt}
+  \end{tabular*}
 }
 
 \newcommand{\resumeSubheadingCont}[2]{
@@ -83,7 +82,7 @@
 \href{mailto:mircodezorzi@protonmail.com}{\texttt{mircodezorzi@protonmail.com}}
   $\bullet$ {\small+}39 331 9174 467
   $\bullet$ Github: \href{https://github.com/mircodezorzi}{Mirco De Zorzi}
-  $\bullet$ Vivaro, Pordenone, Italy
+	$\bullet$ Pordenone \& Venice, Italy
 
 \vspace{1em}
 
@@ -91,15 +90,18 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {I.T.I.S J.F.Kennedy}{Pordenone, IT}
-      {Diploma in Information Technologies}{2016 - present}
+      {Diploma in Information Technologies, Vote: 81/100}{2016 - 2021}
+    \resumeSubheading
+      {Ca'Foscari}{Venice, IT}
+      {Bachelors in Computer Science}{2021 - present}
   \resumeSubHeadingListEnd
 
 \shorterSection{Skills}
   \resumeSubHeadingListStart
-    \resumeSubItem{Languages}{C++, C, Golang, Python, TypeScript, Vue, React, Haskell}
+    \resumeSubItem{Languages}{C++, C, Golang, Python, Lua, TypeScript, React, Vue}
 		\resumeSubItem{Other Tools}{AWS, MongoDB, ElasticSearch, Prometheus, SQL, Emacs}
     \resumeSubItem{Administrative Tools}{Serverless, Ansible, Docker, Docker Compose, Git, Linux, *BSD}
-    \resumeSubItem{Other Skills}{Binary Reverse Engineering, Private API Reverse Engineering}
+    \resumeSubItem{Other Skills}{Binary Reverse Engineering, Web API Reverse Engineering}
     \resumeSubItem{Natural Languages}{: Italian (native), English (proficient), Slovakian (second language)}
 
 \resumeSubHeadingListEnd
@@ -111,86 +113,54 @@
       {Technological Systems by Moro}{Azzano Decimo, Italy}
       {Software Development}{December 2020 - March 2021}
       \resumeItemListStart
-        \resumeItem{Development}
-          {Developed software components for remote monitoring based on a serverless architecture hosted on AWS.}
+        \resumeItem{Development}{Developed software components for remote monitoring based on a serverless architecture hosted on AWS.}
       \resumeItemListEnd
 
     \resumeSubheadingCont
       {Reverse Engineering and Software Development}{June 2019 - August 2019}
       \resumeItemListStart
-        \resumeItem{Development}
-					{Developed software components for \textit{simultaneous localization
-					and mapping} and \textit{automated guided vehicles} on the R.O.S.
-					operating system; The core is written in C++ and frontend in
-					Javascript.}
-        \resumeItem{Reverse Engineering}
-					{Reverse Engineered stripped firmware for an STM32 microprocessor.}
+        \resumeItem{Development}{Developed software components for \textit{simultaneous localization and mapping} and \textit{automated guided vehicles} on the R.O.S.  operating system; The core is written in C++ and frontend in Javascript.}
+        \resumeItem{Reverse Engineering}{Reverse Engineered stripped firmware for an STM32 microprocessor.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Advanced Algorithms Summer School}{Ca' Foscari University, Venice, Italy}
       {Course}{July 2019}
 
-      Attended a week-long \textit{advanced algorithms} course at San Servolo
-      International College for students qualified at the 2019 National
-      Olympiad of Informatics. The topics ranged from dynamic programming to
-      greedy algorithms and graphs.
+      Attended a week-long \textit{advanced algorithms} course at San Servolo International College for students qualified at the 2019 National Olympiad of Informatics. The topics ranged from dynamic programming to greedy algorithms and graphs.
 
     \resumeSubheading
       {Cyber Challenge 2019}{University of Padua and Pisa, Italy}
       {Course}{February 2019 - June 2019}
 
       Qualified at a national programming challenge organized by the
-      \textit{National Interuniversity Consortium for Informatics} at the
-      University of Pisa and subsequently attended a 3 months long
-      cybersecurity course at the University of Padua with topics such as:
-      reverse engineering, pwning, web security, and cryptography. At the end
-      of this course participated at a jeopardy CTF hosted by the organizers
-      of the course.
+      \textit{National Interuniversity Consortium for Informatics} at the University of Pisa and subsequently attended a 3 months long cybersecurity course at the University of Padua with topics such as: reverse engineering, pwning, web security, and cryptography. At the end of this course participated at a jeopardy CTF hosted by the organizers of the course.
 
   \resumeSubHeadingListEnd
 
 \shorterSection{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{sentry}{High performance intrusion prevention reverse proxy
-    and load balancer written in C++ with a frontend written in Vue.}
-    \resumeSubItem{pka2xml (\texttt{github.com/mircodezorzi/pka2xml})}{Packet
-    Tracer related tools obtained through reverse engineering.}
-    \resumeSubItem{loki-cpp (\texttt{github.com/mircodezorzi/loki-cpp})}{Modern
-    C++ driver for Loki: a log aggregation system.}
-    \resumeSubItem{hort (\texttt{github.com/hort})}{Data hoarding and indexing
-    framework written in modern C++.}
-    \resumeSubItem{sym}{Process scheduling and memory management simulator
-    written in pure C.}
+		\resumeSubItem{sentry}{High performance reverse proxy and load balancer written in C++ with Lua scripting support and a Vue frontend.}
+    \resumeSubItem{pka2xml (\texttt{github.com/mircodezorzi/pka2xml})}{Packet Tracer related tools obtained through reverse engineering.}
+    \resumeSubItem{loki-cpp (\texttt{github.com/mircodezorzi/loki-cpp})}{Modern C++ driver for Loki: a log aggregation system.}
+		\resumeSubItem{tojson (\texttt{github.com/mircodezorzi/tojson})}{Small library to convert between different data serialization formats.}
+		\resumeSubItem{sigol (\texttt{github.com/mircodezorzi/sigol})}{Go tool to automatically generate and deploy AWS Lambdas.}
+    \resumeSubItem{hort (\texttt{github.com/hort})}{Data hoarding and indexing framework written in modern C++.}
+    \resumeSubItem{sym}{Process scheduling and memory management simulator written in pure C.}
   \resumeSubHeadingListEnd
 
 \shorterSection{Certifications}
   \resumeSubHeadingListStart
     \small
-    \resumeSubHeadingListEntry{Cisco \textit{IT Essentials}, Cisco
-    \textit{Introduction to Networks}, and Cisco \textit{Cybersecurity Essentials}}
+    \resumeSubHeadingListEntry{Cisco \textit{IT Essentials}, Cisco \textit{Introduction to Networks}, and Cisco \textit{Cybersecurity Essentials}}
   \resumeSubHeadingListEnd
 
 \shorterSection{Additional Experience \& Achievements}
   \resumeSubHeadingListStart
     \small
-    \resumeSubHeadingListEntry{Won the M.I.U.R. prize at the \textit{National
-    Robotic Olympics} of 2019 with a remotely operated drone for environmental
-    data collection, processing, and analysis. Later exhibited the project at
-    the Italian Ministry of Education in Rome during the National Day for the
-    Environment.}
-		\resumeSubHeadingListEntry{Participated at internation \textit{Capture The
-		Flag} hacking competitions with Padua's \textit{NoPwnIntended} and Italy's
-		\textit{mhackeroni} teams.}
-    %\resumeSubHeadingListEntry{Frequently participate at international CTFs
-    %events such as \textit{DEF CON CTF 2020} under Italys' national
-    %\textit{mhackeroni} team.}
-    %\resumeSubHeadingListEntry{Qualified for the \textit{National Robotic
-    %Olympics} of 2020 and the \textit{National Informatics Competition}
-    %of 2020, which were both cancelled due to the COVID-19 pandemic.}
-    \resumeSubHeadingListEntry{Participated at 3 national Rubik's cube
-    competitions in Milan, Verona, and Bratislava (SK) with a personal best of
-    18.67 seconds.}
+		\resumeSubHeadingListEntry{Participate at \textit{Capture The Flag} "hacking" competitions with Padua's \textit{NoPwnIntended} and Italy's \textit{Mhackeroni} teams.}
+    \resumeSubHeadingListEntry{Participated at 3 national Rubik's cube competitions in Milan, Verona, and Bratislava (SK) with a personal best of 18.67 seconds.}
+    \resumeSubHeadingListEntry{Won the M.I.U.R. prize at the \textit{National Robotic Olympics} of 2019 with a remotely operated drone for environmental data collection, processing, and analysis.  Presented the prototype at the Italian Ministry of Education in Rome during the National Day for the Environment.}
   \resumeSubHeadingListEnd
 
 \end{document}
